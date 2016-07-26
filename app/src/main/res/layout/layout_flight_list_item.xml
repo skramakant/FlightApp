@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_marginTop="4dp"
+    android:elevation="3dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/flight_origin"
+                android:text="Delhi"
+                android:textSize="15dp"
+                android:padding="3dp"/>
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/flight_destination"
+                android:text="Mumbai"
+                android:textSize="15dp"
+                android:padding="3dp"/>
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/flight_name"
+                android:text="Air india"
+                android:textSize="15dp"
+                android:padding="3dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/flight_take_off_time"
+                android:text="time"
+                android:textSize="15dp"
+                android:padding="3dp"/>
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/flight_landing_time"
+                android:text="time"
+                android:textSize="15dp"
+                android:padding="3dp"/>
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/flight_ticket_price"
+                android:text="1500"
+                android:textSize="15dp"
+                android:padding="3dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/flight_ticket_class"
+            android:text="Business"
+            android:textSize="15dp"
+            android:padding="3dp"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

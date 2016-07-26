@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/price"
+        android:title="price"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/take_off"
+        android:title="take-off-time"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/landing_time"
+        android:title="landing-time"
+        app:showAsAction="ifRoom"/>
+</menu>
