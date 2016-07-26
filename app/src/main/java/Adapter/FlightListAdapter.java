@@ -48,7 +48,7 @@ public class FlightListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
         flightListViewHolder.getFlightTakeOffTime().setText("T" +getTime(object.getTakeoffTime()));
         flightListViewHolder.getFlightLandingTime().setText("D" +getTime(object.getLandingTime()));
-        flightListViewHolder.getFlightTicketFare().setText(object.getPrice());
+        flightListViewHolder.getFlightTicketFare().setText(object.getPrice()+"rs");
 
         flightListViewHolder.getFlightOrigin().setText(airportMap.get(object.getOriginCode()));
         flightListViewHolder.getFlightDestination().setText(airportMap.get(object.getDestinationCode()));
