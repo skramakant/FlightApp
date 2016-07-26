@@ -21,7 +21,11 @@ public class Parser {
     private static String AIRPORT_MAP = "airportMap";
     private static String FLIGHT_DATA = "flightsData";
 
-
+    /**
+     * method is used for making airline hashmap, from API response
+     * @param object
+     * @return airline hashmap
+     */
     public static HashMap<String,String> makeAirLineMap(JSONObject object){
         JSONObject jsonObject = null;
         try {
@@ -40,6 +44,11 @@ public class Parser {
         return null;
     }
 
+    /**
+     * method is used for getting airport map from API response
+     * @param object
+     * @return Airport Map
+     */
     public static HashMap<String,String> makeAirPortMap(JSONObject object){
         JSONObject jsonObject = null;
         try {
@@ -54,6 +63,11 @@ public class Parser {
         return null;
     }
 
+    /**
+     * method is used for parsing flight data coming from API
+     * @param response
+     * @return List of Flight Data
+     */
     public static List<Object> getFlightsData(JSONObject response){
         try {
             JSONArray jsonArray = response.getJSONArray(FLIGHT_DATA);

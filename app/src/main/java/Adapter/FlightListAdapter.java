@@ -1,7 +1,6 @@
 package Adapter;
 
 import android.content.Context;
-import android.content.res.ObbInfo;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -62,11 +61,16 @@ public class FlightListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         return flightList.size();
     }
 
-   public void swapList(List<Object> list){
+    public void swapList(List<Object> list){
         this.flightList = list;
         notifyDataSetChanged();
     }
 
+    /**
+     * function is used for converting milliseconds to time
+     * @param seconds
+     * @return time
+     */
     private String getTime(String seconds){
         long time = Long.parseLong(seconds);
         Date date = new Date(time);

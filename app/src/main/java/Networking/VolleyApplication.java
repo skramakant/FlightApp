@@ -27,6 +27,10 @@ public class VolleyApplication extends Application {
         sInstance = this;
     }
 
+    /**
+     * volley queue for making network request
+     * @return request queue
+     */
     public RequestQueue getRequestQueue() {
         return mRequestQueue;
     }

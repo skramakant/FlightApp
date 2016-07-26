@@ -48,6 +48,9 @@ public class MainActivity extends AppCompatActivity implements InterfaceFlightDe
 
     }
 
+    /**
+     * Method is used for getting flight details from server
+     */
     private void fetchFlightList() {
         String url ="http://blog.ixigo.com/sampleflightdata.json";
 
@@ -71,6 +74,9 @@ public class MainActivity extends AppCompatActivity implements InterfaceFlightDe
         VolleyApplication.getInstance().getRequestQueue().add(jsonRequest);
     }
 
+    /**
+     * initializing UI views
+     */
     private void initView() {
         rvflightList = (RecyclerView) findViewById(R.id.listFlight);
         rvflightList.setNestedScrollingEnabled(false);
@@ -113,6 +119,9 @@ public class MainActivity extends AppCompatActivity implements InterfaceFlightDe
         }
     }
 
+    /**
+     * method is used for sorting the flight by landing time(in ascending order)
+     */
     private void sortLandIngTime() {
 
         List<Object> tempList = new ArrayList<>();
@@ -130,6 +139,9 @@ public class MainActivity extends AppCompatActivity implements InterfaceFlightDe
         Toast.makeText(this,"Sorted According To Landing Time",Toast.LENGTH_LONG).show();
     }
 
+    /**
+     * method is used for sorting the flight by Take Off time(in ascending order)
+     */
     private void sortTakeOffTime() {
 
         List<Object> tempList = new ArrayList<>();
@@ -147,6 +159,9 @@ public class MainActivity extends AppCompatActivity implements InterfaceFlightDe
         Toast.makeText(this,"Sorted According To Take-Off Time",Toast.LENGTH_LONG).show();
     }
 
+    /**
+     * method is used for sorting the flight by price(in ascending order)
+     */
     private void sortPrice() {
         List<Object> tempList = new ArrayList<>();
         tempList.addAll(flightList);
