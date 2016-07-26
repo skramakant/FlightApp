@@ -1,12 +1,6 @@
 package Parser;
 
 import android.content.Context;
-import android.widget.AutoCompleteTextView;
-
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -66,7 +60,7 @@ public class Parser {
             if(jsonArray == null) return null;
 
             List<Object> makeList = new ArrayList<>();
-            Gson gson = new Gson();
+            //Gson gson = new Gson();
 
             for (int i=0; i<jsonArray.length();i++){
 

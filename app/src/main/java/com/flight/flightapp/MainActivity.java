@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements InterfaceFlightDe
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.e("error",error.toString());
+                Toast.makeText(getApplicationContext(),"No Internet Connection",Toast.LENGTH_LONG).show();
             }
         });
 
